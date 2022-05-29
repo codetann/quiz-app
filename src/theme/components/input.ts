@@ -6,7 +6,7 @@ interface FormInputProps {
 }
 
 const form_input = ({ mode, props }: FormInputProps): InputProps => ({
-  bg: mode("blackAlpha.100", "whiteAlpha.100")(props),
+  bg: mode("blackAlpha.100", "_.input.dark")(props),
   h: "3rem",
   fontSize: "14px",
   rounded: "md",

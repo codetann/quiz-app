@@ -10,6 +10,10 @@ const colors = {
       light: theme.colors.purple[600],
       dark: "#5468FF",
     },
+    input: {
+      light: "#F2F5F9",
+      dark: "#242147",
+    },
   },
 };
 
