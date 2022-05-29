@@ -8,7 +8,7 @@ const colors = {
     },
     primary: {
       light: theme.colors.purple[600],
-      dark: theme.colors.purple[300],
+      dark: "#5468FF",
     },
   },
 };

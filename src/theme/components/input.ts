@@ -16,6 +16,7 @@ const form_input = ({ mode, props }: FormInputProps): InputProps => ({
 
   _focus: {
     outlineColor: mode("blackAlpha.200", "_.primary.dark")(props),
+    transform: "translateY(-1px)",
     "&:hover": {
       opacity: 1,
     },
