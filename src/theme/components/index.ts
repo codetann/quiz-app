@@ -1,5 +1,2 @@
-import { Input } from "./input";
-
-export const components = {
-  Input,
-};
+export * from "./input";
+export * from "./button";

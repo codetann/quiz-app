@@ -1,14 +1,15 @@
 import { mode } from "@chakra-ui/theme-tools";
+import { theme } from "@chakra-ui/react";
+import { form_input, form_button } from "./components";
 
 const styles = {
   global: (props: any) => ({
     body: {
       bg: mode("_.bg.light", "_.bg.dark")(props),
     },
-    "input-css": {
-      bg: "black",
-      h: "20rem",
-    },
+
+    ".form-input": form_input({ mode, props }),
+    ".form-button": form_button({ mode, props }),
   }),
 };
 

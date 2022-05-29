@@ -1,19 +1,25 @@
-import { color, ComponentStyleConfig } from "@chakra-ui/react";
+import { InputProps } from "@chakra-ui/react";
 
-const Input: ComponentStyleConfig = {
-  baseStyle: {
-    background: "orange",
-  },
-  sizes: {},
-  defaultProps: {
-    variant: "default",
-  },
-  variants: {
-    default: {
-      h: "20rem",
-      backgroundColor: "yellow",
-    },
-  },
-};
+interface FormInputProps {
+  mode: any;
+  props: any;
+}
 
-export { Input };
+const form_input = ({ mode, props }: FormInputProps): InputProps => ({
+  bg: mode("blackAlpha.100", "whiteAlpha.100")(props),
+  h: "2.5rem",
+  rounded: "md",
+  pl: "1rem",
+  outline: "none",
+  transition: "all .2s ease-in-out",
+
+  _focus: {
+    outlineColor: mode("blackAlpha.200", "_.primary.dark")(props),
+  },
+
+  _hover: {
+    opacity: 0.8,
+  },
+});
+
+export { form_input };
