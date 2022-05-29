@@ -8,7 +8,8 @@ interface Props {
 const form_button = ({ mode, props }: Props): ButtonProps => ({
   /* base styles */
   bg: mode("_.primary.light", "_.primary.dark")(props),
-  h: "2.5rem",
+  h: "3rem",
+  fontSize: "14px",
   rounded: "md",
   outline: "none",
   transition: "all .1s ease-in-out",

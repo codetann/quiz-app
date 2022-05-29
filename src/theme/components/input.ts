@@ -7,7 +7,8 @@ interface FormInputProps {
 
 const form_input = ({ mode, props }: FormInputProps): InputProps => ({
   bg: mode("blackAlpha.100", "whiteAlpha.100")(props),
-  h: "2.5rem",
+  h: "3rem",
+  fontSize: "14px",
   rounded: "md",
   pl: "1rem",
   outline: "none",
@@ -15,6 +16,9 @@ const form_input = ({ mode, props }: FormInputProps): InputProps => ({
 
   _focus: {
     outlineColor: mode("blackAlpha.200", "_.primary.dark")(props),
+    "&:hover": {
+      opacity: 1,
+    },
   },
 
   _hover: {

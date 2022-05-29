@@ -5,7 +5,6 @@ import {
   Heading,
   HStack,
   Spacer,
-  useColorMode,
   VStack,
 } from "@chakra-ui/react";
 import { useAuth, useForm } from "@hooks";
@@ -28,7 +27,9 @@ const Login = () => {
 
   return (
     <VStack h="100vh" justify="center" align="center">
-      <Heading p={6}>Login</Heading>
+      <Heading fontSize="46px" pb={10}>
+        Login
+      </Heading>
       <form onSubmit={handleSubmit}>
         <VStack spacing={4} w="sm">
           <FormInput
