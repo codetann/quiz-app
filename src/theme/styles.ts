@@ -1,6 +1,6 @@
 import { mode } from "@chakra-ui/theme-tools";
 import { theme } from "@chakra-ui/react";
-import { form_input, form_button } from "./components";
+import { form_input } from "./components";
 
 const styles = {
   global: (props: any) => ({
@@ -9,7 +9,6 @@ const styles = {
     },
     /* custom component styling */
     ".form-input": form_input({ mode, props }),
-    ".form-button": form_button({ mode, props }),
   }),
 };
 
