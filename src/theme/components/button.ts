@@ -1,13 +1,28 @@
 import { ButtonProps } from "@chakra-ui/react";
+import { StyleConfig } from "@chakra-ui/theme-tools";
 
 interface Props {
   mode: any;
   props: any;
 }
 
+const button: StyleConfig = {
+  baseStyle: {
+    height: "3rem",
+    fontSize: "sm",
+    rounded: "md",
+    outline: "none",
+    transition: "all .1s ease-in-out",
+  },
+  variants: {},
+  sizes: {},
+  defaultProps: {},
+};
+
 const form_button = ({ mode, props }: Props): ButtonProps => ({
   bg: mode("_.primary.light", "_.primary.dark")(props),
-  h: "2.5rem",
+  h: "3rem",
+  fontSize: "14px",
   rounded: "md",
   outline: "none",
   transition: "all .1s ease-in-out",

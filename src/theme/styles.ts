@@ -5,7 +5,9 @@ import { form_input, form_button } from "./components";
 const styles = {
   global: (props: any) => ({
     body: {
-      bg: mode("_.bg.light", "_.bg.dark")(props),
+      _dark: {
+        bg: "alt.900",
+      },
     },
 
     ".form-input": form_input({ mode, props }),

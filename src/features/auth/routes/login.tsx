@@ -5,7 +5,6 @@ import {
   Heading,
   HStack,
   Spacer,
-  useColorMode,
   VStack,
 } from "@chakra-ui/react";
 import { useAuth, useForm } from "@hooks";
