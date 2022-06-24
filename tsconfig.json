@@ -24,7 +24,9 @@
       "@store": ["src/store"],
       "@features": ["src/features"],
       "@theme": ["src/theme"],
-      "@lib": ["src/lib"]
+      "@lib": ["src/lib"],
+      "@animations": ["src/animations"],
+      "@services": ["src/services"]
     }
   },
   "include": ["src"],

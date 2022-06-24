@@ -1,6 +1,6 @@
 import { Routes as Router, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import { Login } from "@features";
+import { Login, Signup } from "@services";
 
 const Routes = () => {
   const location = useLocation();
@@ -9,7 +9,7 @@ const Routes = () => {
     <AnimatePresence exitBeforeEnter>
       <Router location={location} key={location.pathname}>
         <Route path="/" element={<Login />} />
-        <Route path="/chat" element={<p>Other</p>} />
+        <Route path="/signup" element={<Signup />} />
       </Router>
     </AnimatePresence>
   );

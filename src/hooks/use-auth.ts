@@ -33,7 +33,9 @@ const useAuth = () => {
         title: "Error",
         description: error.message,
       });
+      return { error: true };
     }
+    return { error: false };
   };
 
   return {
