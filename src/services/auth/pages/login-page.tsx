@@ -59,7 +59,7 @@ const Login = () => {
               <FormButton disabled={!form.isValid} type="submit" w="100%">
                 Login
               </FormButton>
-              <FormButton type="button" bg="whiteAlpha.200" px={3}>
+              <FormButton variant="ghost" px={3}>
                 Guest
               </FormButton>
             </HStack>
