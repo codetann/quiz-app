@@ -9,7 +9,6 @@ import {
 } from "@chakra-ui/react";
 import { useAuth, useForm } from "@hooks";
 import { FormInput, FormButton } from "@components";
-// import { PageTransition } from "@animations";
 import { PageTransition } from "src/animations";
 
 const Login = () => {

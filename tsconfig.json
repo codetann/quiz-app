@@ -25,7 +25,8 @@
       "@features": ["src/features"],
       "@theme": ["src/theme"],
       "@lib": ["src/lib"],
-      "@animations": ["src/animations"]
+      "@animations": ["src/animations"],
+      "@services": ["src/services"]
     }
   },
   "include": ["src"],

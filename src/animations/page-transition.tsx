@@ -28,7 +28,7 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
       animate={VARIANTS.IN}
       exit={VARIANTS.OUT}
       variants={variants}
-      transition={{ duration: 0.4, type: "spring" }}
+      transition={{ duration: 0.3, type: "spring" }}
     >
       {children}
     </motion.div>
