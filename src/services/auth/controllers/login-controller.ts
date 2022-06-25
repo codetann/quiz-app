@@ -1,26 +1,31 @@
+import { useToast } from "@chakra-ui/react";
 import { useAuth } from "@hooks";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useLogin } from "../api";
 
 const useLoginController = () => {
   const navigate = useNavigate();
-  const { login } = useAuth();
+  const login = useLogin();
+  const toast = useToast();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const _resetState = () => {
-    setEmail("");
-    setPassword("");
-  };
-
+  
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const { error } = await login(email, password);
+    try {
+      await login(email, password);
 
-    if (!error) navigate("/dashboard");
-
-    _resetState();
+      navigate("/");
+    } catch (error: any) {
+      toast({
+        title: "Error",
+        description: error.message,
+        status: "error",
+        duration: 5000,
+      })
+    }
   };
 
   const onEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {

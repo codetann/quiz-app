@@ -26,7 +26,8 @@
       "@theme": ["src/theme"],
       "@lib": ["src/lib"],
       "@animations": ["src/animations"],
-      "@services": ["src/services"]
+      "@services": ["src/services"],
+      "@types": ["src/typings"]
     }
   },
   "include": ["src"],

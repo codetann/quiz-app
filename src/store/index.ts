@@ -1,1 +1,1 @@
-export * from "./use-store";
+export * from "./app-store";
