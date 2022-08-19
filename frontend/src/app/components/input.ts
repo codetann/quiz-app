@@ -7,7 +7,7 @@ interface Props {
   outline?: boolean;
 }
 
-export const Button = styled.button<Props>`
+export const Input = styled.input<Props>`
   background: ${({ theme }) => theme.colors.whiteAlpha[200]};
   height: ${({ theme }) => theme.spacing[10]};
   border: none;
@@ -36,7 +36,7 @@ export const Button = styled.button<Props>`
       border: 2px solid transparent;
     `}
 
-  ${({ outline }) =>
+${({ outline }) =>
     outline &&
     css`
       background: none;
