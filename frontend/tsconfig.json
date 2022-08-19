@@ -21,7 +21,9 @@
       "@features": ["./src/app/features"],
       "@assets": ["./src/assets"],
       "@theme": ["./src/theme"],
-      "@components": ["./src/app/components"]
+      "@components": ["./src/app/components"],
+      "@providers": ["./src/app/providers"],
+      "@lib": ["./src/lib"]
     },
     "typeRoots": ["./src/typings"]
   },
