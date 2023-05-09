@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import { Login } from "@features";
+import { Login, Register } from "@features";
 
 function AppRoutes() {
   const location = useLocation();
@@ -7,6 +7,7 @@ function AppRoutes() {
   return (
     <Routes location={location} key={location.pathname}>
       <Route path="/" element={<Login />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
   );
 }
